@@ -1,0 +1,400 @@
+/* start of wrapper: grid set up */
+.wrapper{
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    grid-template-areas:
+    "logo header header"
+    "navigation navigation navigation"
+    "maincontent maincontent maincontent"
+    "marquee marquee marquee"
+    "footer footer footer";
+}
+
+.logo{
+    grid-area: logo;
+}
+
+.header{
+    grid-area: header;
+}
+
+.navigation{
+    grid-area: navigation;
+}
+
+.maincontent{
+    grid-area: maincontent;
+}
+
+.marquee{
+    grid-area: marquee;
+}
+.footer{
+    grid-area: footer;
+}
+/* end of wrapper: grid set up */
+
+/*start of wrapper: styling*/
+.header{
+    color: white;
+    background-color: #5B1616;
+    padding: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40pt;
+    text-shadow: 2px 2px #885454;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    background-color: #5B1616;
+    padding-left: 20px;
+}
+
+.logo a:hover{opacity: 70%;}
+
+.navigation{
+    background-color: #D4D4D4;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.maincontent{
+    padding: 20px;
+}
+
+.footer{
+    background-color: #5B1616;
+    padding-top: 20px;
+}
+
+/* styling links */
+a{
+    text-decoration: none; 
+}
+
+/* start of navbar grid set up*/
+.nav_bar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "homepage about_us schedule tournaments contact";
+}
+
+.homepage{
+    grid-area: homepage;
+}
+
+.about_us{
+    grid-area: about_us;
+}
+
+.schedule{
+    grid-area: schedule;
+}
+
+.tournaments{
+    grid-area: tournaments;
+}
+
+.contact{
+    grid-area: contact;
+}
+
+/* end of navbar grid setup */  
+
+/* start of navbar styling */
+.nav_bar{
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-size: 180%;
+}
+
+.nav_bar a:link{color: rgb(14, 12, 65);} /* the colour before a link is clicked or hovered over */
+.nav_bar a:visited{color: rgb(29, 28, 76) ;} /* the colour will be lighter so the user knows they have already visited that page */
+.nav_bar a:hover{color:rgb(93, 124, 155);} /* the colour of the link will beccome lighter to signify that this can be clicked on */
+/* end of navbar styling */
+
+/* start of main content grid setup */
+.maincontent{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "bar1"
+    "carousel"
+    "bar2"
+    "bar3"
+    "bar4"
+    "bar5"
+    "bar6"
+    "bar7"
+    "table"
+    "timetable"
+}
+
+.bar1{
+    grid-area: bar1;
+}
+
+.carousel{
+    grid-area: carousel;
+}
+
+.bar2{
+    grid-area: bar2;
+}
+
+.bar3{
+    grid-area: bar3;
+}
+
+.bar4{
+    grid-area: bar4;
+}
+
+.bar5{
+    grid-area: bar5;
+}
+
+.bar6{
+    grid-area: bar6;
+}
+
+.bar7{
+    grid-area: bar7;
+}
+
+.table{
+    grid-area: table;
+}
+
+.timetable{
+    grid-area: timetable;
+}
+/* end of main content grid setup */  
+
+.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    filter: drop-shadow(0 0 3px rgb(137, 131, 133));
+}
+
+/* start of maincontent bar1 set up*/
+.bar1{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-areas:  
+    "img textbox";
+}
+
+.img{
+    padding: 20px;
+    grid-area: img;
+    filter: drop-shadow(0 0 7.5px rgb(54, 50, 51));
+}
+
+.textbox{
+    grid-area: textbox;
+    color: rgb(22, 22, 66);
+    font-family: "Roboto";
+    padding: 20px;
+}
+/* end of maincontent bar1 set up*/
+
+/* start of main content bar4 set up */
+.bar4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "img1 img2 img3";
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.img1{
+    grid-area: img1;
+    filter: drop-shadow(0 0 7.5px rgb(54, 50, 51));
+
+}
+
+.img2{
+    grid-area: img2;
+    filter: drop-shadow(0 0 7.5px rgb(54, 50, 51));
+
+}
+
+.img3{
+    padding-left: 20px;
+    grid-area: img3;
+    filter: drop-shadow(0 0 7.5px rgb(54, 50, 51));
+
+}
+/* end of main content bar4 set up */
+
+/* start of main content bar5 set up */
+.bar5{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "trainings coaches";
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.trainings{
+    grid-area: trainings;
+    font-family: "Roboto";
+}
+
+.coaches{
+    grid-area: coaches;
+    font-family: "Roboto";
+}
+/* end of main content bar5 set up */
+
+/* start of maincontent bar6 set up*/
+.bar6{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-areas:
+    "textbox img";
+    grid-gap: 20px;
+}
+
+/* end of maincontent bar6 set up*/
+
+/* start of maincontent bar1 set up*/
+.bar7{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-areas:
+    "image textbox2";
+    grid-gap: 20px;
+}
+
+.image{
+    padding: 20px;
+    grid-area: image;
+    filter: drop-shadow(0 0 7.5px rgb(54, 50, 51));
+
+}
+
+.textbox2{
+    grid-area: textbox2;
+    color: rgb(22, 22, 66);
+    font-family: "Roboto";
+    padding: 20px;
+}
+/* end of maincontent bar1 set up*/
+
+
+/* stying font sizes in the website */
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(27, 25, 84);
+}
+
+/* start of footer: grid set-up */
+.footer{
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr;
+    grid-template-areas: 
+    "logo links social footer_contact";
+}
+.logo{
+    grid-area: logo;
+}
+
+.links{
+    padding-top: 20px;
+    padding-left: 50px;
+    grid-area: links;
+    font-family: 'Bebas Neue';
+    font-size: 35px;
+}
+
+/* start of links styling*/
+
+.links a:link{color: rgb(255, 255, 255);} /* the colour before a link is clicked or hovered over */
+.links a:visited{color: rgb(255, 255, 255) ;} /* the colour will be lighter so the user knows they have already visited that page */
+.links a:hover{color:rgb(130, 158, 177);} /* the colour of the link will beccome lighter to signify that this can be clicked on */
+
+/* end of links styling*/
+
+/* start of social media styling */
+.social a:hover{opacity: 70%;}
+.social{
+
+    padding-left: 20px;
+    font-size: 30px;
+    font-family: "Bebas Neue";
+    grid-area: social;
+    color: white;
+}
+/* end of social media styling */
+
+/* start of footer contact setup */
+.footer_contact{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "footer_contact" 
+    "contact1"
+    "contact2";
+}
+
+.contact1{
+    grid-area: contact1;
+}
+
+.contact2{
+    grid-area: contact2;
+}
+/* end of footer contact setup */
+
+/* start of footer contact styling */
+.footer_contact{
+    color: white;
+    grid-area: footer_contact;
+    font-family: "Bebas Neue";
+    font-size: 30px;
+}
+
+.contact1{
+    color: white;
+    font-family: "Roboto";
+    font-size: 20px;
+}
+
+.contact1 a:link{color: rgb(255, 255, 255);} /* the colour before a link is clicked or hovered over */
+.contact1 a:hover{color:rgb(156, 162, 166);} /* the colour of the link will beccome lighter to signify that this can be clicked on */
+
+.contact2{
+    padding-right: 20px;
+    color: white;
+    font-family: "Bebas Neue";
+    font-size: 20px;
+}
+/* start of footer contact styling */
+
+/* start of schedule table styling */
+.table{
+    font-size: 15px;
+    font-family: "Roboto";
+    padding: 20px;
+}
+
+.timetable{
+    font-size: 15px;
+    font-family: "Roboto";
+    padding: 20px;
+}
+/* start of schedule table styling */
+
+
+
