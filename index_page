@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> <!-- start of header -->
+        <title> Ultimate Frisbee at BDSC</title> <!-- naming the webpage -->
+        <link rel="icon" type="image/x-icon" href="Images/frisbee_player.png"> <!-- ultimate frisbee page icon-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- importing the font used in my website-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans&family=Open+Sans:wght@300&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- importing the bootstrap carousel used in the website-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head> <!-- end of header-->
+    <body>
+        <div class ="wrapper"> <!-- start of wrapper-->
+            <div class="logo" title="home page - click here to go to the home page"> <!-- start of logo-->
+                <a href = "index.html"> <!-- the frisbee logo can be  clicked on to go back to the home page-->
+                    <img src="Images/frisbee_logo.png" alt = "frisbee logo">
+                </a>
+            </div> <!-- end of logo-->
+            <div class ="header"> <!-- start of header-->
+                <p> Ultimate Frisbee at Botany Downs Secondary College</p>
+            </div> <!-- end of header-->
+            <div class = "navigation"> <!-- start of navigation-->
+                <div class = "nav_bar">
+                    <div class = homepage> <!-- start of homepage-->
+                        <a href = "index.html">HOME </a>
+                    </div> <!-- end of homepage-->
+                    <div class= "about_us"> <!-- start of about us page-->
+                        <a href = "about_us.html"> ABOUT US</a>
+                    </div> <!-- end of about us page-->
+                    <div class= "tournaments"> <!-- start of tournaments page-->
+                        <a href = "tournaments.html"> TOURNAMENTS</a>
+                    </div> <!-- end of tournaments page-->
+                    <div class= "schedule"> <!-- start of schedule page-->
+                        <a href = "schedule.html"> SCHEDULE</a>
+                    </div> <!-- end of schedule page-->
+                    <div class= "contact"> <!-- start of contact page-->
+                        <a href = "contact.html"> CONTACT</a>
+                    </div> <!-- end of contact page-->
+                </div> 
+            </div> <!-- end of navigation-->
+            <div class = "maincontent"> <!-- start of main content -->
+                <div class = "bar1"> <!-- start of bar1-->
+                    <div class = "img">
+                        <img src = "Images/frisbee_flexing.png" alt = "image of person with medal">
+                    </div>
+                    <div class = "textbox">
+                        <h1> What is Ultimate Frisbee? </h1>
+                        <p> Ultimate frisbee, often referred to as Ultimate, is a non-contact, self-refereed sport played with a flying frisbee disc. Ultimate can be played indoors or outdoors, with the number of players on the court per team changing depending on the location. Ultimate teams range from female or male only, or can be mixed. The aim of the game is to catch the frisbee in a rectangular end zone in order to score points. Games are typically 30-45 minutes long. Since Ultimate is a self-refereed sport, at the end of each game there is a spirit circle where teams congratulate the other team, give a small speech about the game, and introduce themselves to the other team. Afterwards, spirit scores are conducted, where you rate the other team on things such as their attitude towards the game and knowledge of the rules, whilst an MVP male and female is also picked. 
+                        </p>
+                    </div>
+                </div> <!-- end of bar1-->
+                <div class = "carousel"> <!-- start of carousel-->
+                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                        <!-- indicators -->
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        </div>
+                        
+                        <!-- physical carousel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" title = "click here to learn more about our team"> <!-- the active item (first image shown)-->
+                                <a href = "about_us.html">
+                                    <img src="Images/team_photo.png" alt="team photo" class="d-block">
+                                    <div class="carousel-caption">
+                                        <h3>About Us</h3>
+                                        <p>click here to find out more about our team</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item" title = "click here to view our results"> <!-- 2nd carousel item-->
+                                <a href = "schedule.html">
+                                    <img src="Images/standing2.png" alt="image of people standing" class="d-block">
+                                    <div class="carousel-caption">
+                                    <h3>Schedule</h3>
+                                    <p>click here to view our results and upcoming games</p>
+                                    </div> 
+                                </a>
+                            </div>
+                            <div class="carousel-item" title = "click here to learn about our tournaments"> <!-- 3rd carousel item -->
+                                <a href = "tournaments.html">
+                                    <img src="Images/standing.png" alt="image of people standing" class="d-block">
+                                    <div class="carousel-caption">
+                                    <h3>Tournaments</h3>
+                                    <p>click here to learn about tournaments we have participated in</p>
+                                    </div>        
+                                </a>
+                            </div>
+                        </div>
+                        <!-- left and right control arrows -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div> <!-- end of carousel-->
+            </div> <!-- end of maincontent -->
+            <div class = "footer">
+                <div class="logo" title="home page - click here to go to the home page"> <!-- start of logo-->
+                    <a href = "index.html">
+                        <img src="Images/frisbee_logo.png" alt = "image of people standing in a circle">
+                    </a>
+                </div> <!-- end of logo-->
+                <div class = "links"> <!-- start of links section-->
+                    <a href = "index.html"> HOME</a>
+                    <a href = "about_us.html"> ABOUT US</a> <br> 
+                    <a href = "schedule.html"> SCHEDULE</a>
+                    <a href = "tournaments.html"> TOURNAMENTS</a> <br>
+                    <a href = "contact.html"> CONTACT</a>
+                </div> <!-- end of links section-->
+                <div class= "social"> <!-- start of social media section-->
+                    <p> Follow us on social media</p>
+                    <a href = "https://www.instagram.com/bdsc.life" title="Click here to visit our Instagram page"> <!-- clickable image that takes you to the instagram page-->
+                        <img src = "Images/instagram_icon.png" alt = "Image of Instagram icon" style="padding-left: 20px; padding-right: 10px;">
+                    </a>
+                    <a href = "https://www.facebook.com/BDSC.News" title="Click here to visit our Facebook page"> <!-- clickable image that takes you to the facebook page-->
+                        <img src = "Images/facebook_icon.png" alt = "Image of Facebook icon" style="padding-right: 20px;">
+                    </a>
+                </div>
+                <div class = "footer_contact"> <!-- start of the contact section-->
+                    <p> Contact Us</p>
+                    <div class = "contact1">
+                        <p> +64 9 273 2310 <br> <a href = "mailto:admin@bdsc.school.nz">admin@bdsc.school.nz</a> <br>
+                            575 Chapel Road, East Tamaki </p>
+                    </div>
+                    <div class = "contact2" style = "text-align: right">
+                        <p> CC Rosetta Tanner 2023 </p>
+                    </div>
+                </div>  <!-- end of the contact section-->
+            </div>
+        </div>
+    </body>
+</html>
